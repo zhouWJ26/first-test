@@ -31,8 +31,8 @@ appium:
 | `test_contacts.py::test_search_contact` | 搜索联系人结果正确 | 通讯录 |
 | `test_moments.py::test_post_text_moment` | 发布朋友圈文本并校验列表 | 发现-朋友圈 |
 | `test_favorites.py::test_collect_image` | 收藏图片后在收藏页可见 | 我-收藏 |
-| `test_settings.py::test_switch_language` | 切换语言后首页元素文本变化 | 我-设置 |
-| `test_performance.py::test_cold_launch_time` | 启动时间 < 3s | 性能 |
+| `test_settings.py::test_switch_language_to_english_and_back` | 切换语言后首页元素文本变化 | 我-设置 |
+| `test_performance.py::test_cold_launch_time` | 冷启动时间 < 3s | 性能 |
 
 > **示例脚本** 请查看 `scripts/wechat_tests/test_send_receive_text.py`，其他脚本结构相同，可按上述列表扩展。所有脚本均支持 `--alluredir` 输出报告。
 
