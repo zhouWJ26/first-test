@@ -64,7 +64,7 @@ jobs:
 * 使用 **ChatGPT** 生成大量随机文本/emoji，自动填充到数据驱动参数化中。
 * 结合 **OpenAI Vision** API 做 UI 截图 OCR 断言，减少维护成本。
 
-## 6. UIAutomator2（纯 uiautomator2 库）脚本
+## 4. UiAutomator2 自动化（首选，仅依赖 uiautomator2 库）
 | Script | 用例描述 | 模块 |
 | ------ | -------- | ---- |
 | `uiauto_tests/test_send_receive_text.py::test_send_text` | 发送文本消息并断言成功 | 聊天 |
@@ -72,7 +72,9 @@ jobs:
 
 执行：
 ```bash
-pip install -r requirements.txt   # 已含 uiautomator2
-python -m uiautomator2 init        # 首次安装守护进程
+pip install -r requirements.txt        # 仅需 pytest + uiautomator2
+python -m uiautomator2 init             # 首次推送服务
 pytest -v scripts/uiauto_tests/
 ```
+
+> *如需使用 Appium，可参考 scripts/wechat_tests 目录，但本课程设计可忽略。*
