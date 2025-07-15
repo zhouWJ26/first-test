@@ -2,7 +2,8 @@ appium:
   server: http://127.0.0.1:4723/wd/hub
   desired_caps:
     platformName: Android
-    deviceName: emulator-5554  # 修改为真机序列号 adb devices 获取
+    deviceName: emulator-5554  # LDPlayer 虚拟设备 emu-5554
+    udid: emulator-5554  # 指定 ADB 设备端口
     appPackage: com.tencent.mm
     appActivity: .ui.LauncherUI
     noReset: true  # 保持登录状态
