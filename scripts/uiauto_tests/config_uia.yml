@@ -1,0 +1,2 @@
+device_serial: emulator-5554  # LDPlayer 端口
+autoinstall: true  # 首次连接自动安装 uiautomator2 服务

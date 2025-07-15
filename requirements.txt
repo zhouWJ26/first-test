@@ -2,3 +2,4 @@ pytest>=7.4
 Appium-Python-Client>=2.11
 yaml
 allure-pytest>=2.13 # optional
+uiautomator2>=2.20
